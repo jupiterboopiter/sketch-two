@@ -5,7 +5,7 @@ body {
     background-color: #313131;
 }
 
-canvas {
+#canvas {
     box-shadow: -3px 2px 9px 6px black;
     cursor: pointer;
     margin: 1rem;
@@ -81,4 +81,34 @@ canvas {
 
 .tools input:hover {
     border: 2px grey solid;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 412px) {
+    html {
+        font-size: 55%;
+        align-items: center;
+    }
+
+    #canvas {
+        align-self: center;
+        margin: .5px;
+        margin-bottom: 3rem;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    
 }

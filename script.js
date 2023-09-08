@@ -81,3 +81,21 @@ function undo_last() {
         context.putImageData(restore_array[index], 0, 0);
     }
 }
+
+
+
+
+
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+       canvas.width = 355;
+       canvas.height = 600;
+    } else {
+      
+    }
+  }
+  
+  let x = window.matchMedia("(max-width: 412px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
